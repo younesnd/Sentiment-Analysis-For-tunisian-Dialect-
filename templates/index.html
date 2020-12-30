@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+   {% block title %}Tunisian dialect sentiment analysis{% endblock %}
+   {% block content %}
+    <h1> Try your Message </h1>
+    <form action="/predict" method="POST">
+
+
+        <div class="form-group">
+            <label for="exampleFormControlTextarea1"></label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name = "content"></textarea>
+        </div>
+
+
+         <input type="submit" name="submit" value="Try"/>
+    </form>
+    {% endblock %}
